@@ -19,6 +19,11 @@ import { format } from 'date-fns';
 
 const monthLabel = (date: string) => format(new Date(date), 'MMM yyyy');
 
+
+//Lets try this
+
+
+
 const ClubDashboard: React.FC = () => {
   const { events, clubs, createClub } = useEvents();
   const { user } = useAuth();
