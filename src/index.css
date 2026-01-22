@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Event Management Portal Design System
+   Academic aesthetic with deep navy/indigo primary and warm coral accents
+   All colors MUST be HSL.
+*/
+
+.LoginPageMainBackground {
+  background-image: url(../images/bac-1.jpg);
+  background-size: cover;
+  /* backdrop-filter: blur(300px); */
+  /* z-index: -2; */
+}
+
+.LoginPageBox {
+  /* border:  black; */
+  /* margin-top: 10%; */
+  /* background-color: whitesmoke; */
+  /* filter: blur(10px); */
+  backdrop-filter: blur(7px);
+  background: transparent;
+  margin: 2%;
+  padding: 2%;
+  border: 2px solid rgb(160, 255, 200);
+  border-radius: 24px;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.LoginPageMainHeading {
+  color: rgb(220, 220, 220);
+  font-family: 'Courier New', Courier, monospace;
+}
+.LoginPageMainHeadingText {
+  color: rgb(225, 190, 255);
+  font-family: 'Times New Roman', Times, serif;
+}
+.cardColor {
+  opacity: 0.9;
+  background-color: rgb(196, 225, 196);
+}
+.cardButton {
+  opacity: 0.8;
+  background-color: aquamarine;
+}
+.errorImageClass {
+  /* background-image: url(../public/images/404error.png); */
+  max-height: 25rem;
+  max-width: 25rem;
+  opacity: 1; 
+}
+
+/* are ek bar npm run kar vapis mere me nahi dikha raha hn */
+/* kiyu?  accha ok   seems like paji ko karna pdega*/
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 224 50% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 50% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 50% 15%;
+
+    --primary: 231 48% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 94%;
+    --secondary-foreground: 224 50% 15%;
+
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 15 80% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 231 48% 30%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 231 48% 25%;
+    --sidebar-foreground: 220 20% 95%;
+    --sidebar-primary: 15 80% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 231 40% 35%;
+    --sidebar-accent-foreground: 220 20% 95%;
+    --sidebar-border: 231 40% 35%;
+    --sidebar-ring: 15 80% 60%;
+
+    /* Custom portal colors */
+    --student: 199 89% 48%;
+    --student-foreground: 0 0% 100%;
+    --club: 262 83% 58%;
+    --club-foreground: 0 0% 100%;
+    --department: 142 70% 45%;
+    --department-foreground: 0 0% 100%;
+  }
+
+
+  /* ye .dark dark mode ke liea hai na? */
+  .dark {
+    --background: 224 50% 8%;
+    --foreground: 220 20% 95%;
+
+    --card: 224 45% 12%;
+    --card-foreground: 220 20% 95%;
+
+    --popover: 224 45% 12%;
+    --popover-foreground: 220 20% 95%;
+
+    --primary: 231 60% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 224 40% 18%;
+    --secondary-foreground: 220 20% 95%;
+
+    --muted: 224 40% 18%;
+    --muted-foreground: 220 15% 60%;
+
+    --accent: 15 80% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 85% 45%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 224 40% 20%;
+    --input: 224 40% 20%;
+    --ring: 231 60% 55%;
+
+    --sidebar-background: 224 50% 10%;
+    --sidebar-foreground: 220 20% 95%;
+    --sidebar-primary: 15 80% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 224 40% 18%;
+    --sidebar-accent-foreground: 220 20% 95%;
+    --sidebar-border: 224 40% 18%;
+    --sidebar-ring: 15 80% 55%;
+
+    --student: 199 85% 55%;
+    --student-foreground: 0 0% 100%;
+    --club: 262 75% 65%;
+    --club-foreground: 0 0% 100%;
+    --department: 142 60% 50%;
+    --department-foreground: 0 0% 100%;
+  }
+}
+
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 22s linear infinite;
+}
+
+
