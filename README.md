@@ -2,6 +2,8 @@
 
 ## Project info
 
+Live link: [Click Here!](https://event-management-portal-b5e4e.web.app/)
+
 ## How can I edit this code?
 
 There are several ways of editing your application best one is:
